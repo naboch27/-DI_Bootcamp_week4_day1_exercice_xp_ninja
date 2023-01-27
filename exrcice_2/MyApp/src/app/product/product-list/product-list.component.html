@@ -1,0 +1,14 @@
+
+<button type="submit" (click)="addProduct()" ngClass="essai">submit</button>
+
+
+
+<ul  *ngFor="let list of listProd;let index = index">
+    <li>{{index+1}}_{{list.name}} = {{ list.prix | currency  }} </li>
+
+    <!--
+       // verifier apres ,il ne fonctionne pas.
+        {{ myNumber | currency:'EUR':{ symbol: '€', position: 'before' } }}
+    -->
+
+</ul>
